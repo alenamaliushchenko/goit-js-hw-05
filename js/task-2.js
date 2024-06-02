@@ -17,8 +17,7 @@
 // У консоль будуть виведені результати її роботи.
 
 const getUsersWithFriend = (users, friendName) => {
-  allUsers.includes(friendName);
-  const friends = allUsers.map(user => user.friends);
+  return users.filter(user => user.friends.includes(friendName));
 };
 
 const allUsers = [
